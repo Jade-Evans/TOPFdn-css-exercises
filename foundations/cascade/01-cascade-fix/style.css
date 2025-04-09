@@ -8,16 +8,20 @@ body {
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
-
 .para {
   font-size: 22px;
 }
 
-.confirm {
+.small-para {
+  font-size: 14px;
+}
+/*swapped the positioning so that .small-para styling is most recent (i.e.
+this rule overrides the para rule) as the p has both para and small-para
+class attributes*/
+
+
+
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -28,8 +32,10 @@ body {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
+/*added #confirm-button as this is an ID
+ = increase hierarchy*/
 
-.child {
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
@@ -40,3 +46,7 @@ div.text {
   font-size: 22px;
   font-weight: 100;
 }
+
+/*added the .text parent to the .child to give more 
+specificity* and override the div.text rules*/
+
